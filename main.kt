@@ -41,11 +41,11 @@ fun main() {
     val diceRoller = DiceRollerV2()
 
     diceRoller.setCallbacks(
-        // передайте лямбду в качестве OnRollCallback
+ 
         OnRollCallback { firstDiceValue: Int, secondDiceValue: Int ->
             println("На кубиках выпало $firstDiceValue и $secondDiceValue")
         },
-        // передайте лямбду в качестве OnDoubleCallback
+ 
         OnDoubleCallback { diceValue: Int ->
             println("Ура!!! Дубль на $diceValue-ах! Бросаем ещё раз")
             diceRoller.roll()
